@@ -24,6 +24,20 @@ public class HttpProcessor {
 
             System.out.println("\n🌐 [" + threadName + "] HTTP Intercepted Request: " + requestLine);
 
+            if (method.equalsIgnoreCase("HEAD")) {
+
+                String response =
+                        "HTTP/1.1 200 OK\r\n" +
+                                "Content-Length: 0\r\n" +
+                                "Connection: close\r\n\r\n";
+
+                clientOut.write(response.getBytes(StandardCharsets.UTF_8));
+                clientOut.flush();
+
+                System.out.println("✅ Health check served.");
+                return;
+            }
+
             if (!method.equalsIgnoreCase("GET")) {
                 System.out.println("   -> Error: Non-GET HTTP methods are unsupported.");
                 return;
