@@ -1,6 +1,6 @@
 # Java HTTP/HTTPS Proxy Server
 
-A lightweight, multi-threaded HTTP/HTTPS proxy server built from scratch in Java using standard Blocking I/O (`java.net.Socket`).
+A lightweight, multithreaded HTTP/HTTPS proxy server built from scratch in Java using standard Blocking I/O (`java.net.Socket`).
 
 ---
 
@@ -16,14 +16,14 @@ A lightweight, multi-threaded HTTP/HTTPS proxy server built from scratch in Java
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME/src
+git clone https://github.com/RanjanKumar93/multithreaded-proxy-web-server.git
+cd multithreaded-proxy-web-server/src
 ```
 
-### 2. Compile All Files
+### 2. Run Files
 
-Navigate to the directory containing your project folder and compile the decoupled components:
-
+Navigate to the directory containing your project folder and Run the Project:
+Or Compile:
 ```bash
 javac *.java
 ```
