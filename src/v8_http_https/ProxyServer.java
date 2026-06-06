@@ -12,7 +12,9 @@ public class ProxyServer {
     public static Map<String, byte[]> lruCache;
 
     public static void main(String[] args) {
-        int port = 8080;
+        int port = Integer.parseInt(
+                System.getenv().getOrDefault("PORT", "8080")
+        );
         final int MAX_CACHE_ENTRIES = 3;
         final int MAX_CLIENTS = 400;
 
