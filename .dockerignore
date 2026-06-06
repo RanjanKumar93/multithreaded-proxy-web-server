@@ -8,6 +8,8 @@ out
 target
 build
 
+src/old
+
 *.class
 *.log
 
